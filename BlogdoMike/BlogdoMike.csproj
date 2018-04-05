@@ -157,6 +157,10 @@
     <Compile Include="Migrations\201803201418060_InitialModel.Designer.cs">
       <DependentUpon>201803201418060_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804031506239_AdicionarImagemModel.cs" />
+    <Compile Include="Migrations\201804031506239_AdicionarImagemModel.Designer.cs">
+      <DependentUpon>201804031506239_AdicionarImagemModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\BlogContext.cs" />
     <Compile Include="Models\Post.cs" />
@@ -206,6 +210,7 @@
     <Content Include="Views\Posts\Details.cshtml" />
     <Content Include="Views\Posts\Edit.cshtml" />
     <Content Include="Views\Posts\Delete.cshtml" />
+    <Content Include="Views\Posts\New.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -226,6 +231,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201803201418060_InitialModel.resx">
       <DependentUpon>201803201418060_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804031506239_AdicionarImagemModel.resx">
+      <DependentUpon>201804031506239_AdicionarImagemModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

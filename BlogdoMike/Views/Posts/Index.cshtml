@@ -16,6 +16,7 @@
                 <th>Título</th>
                 <th>Data do Post</th>
                 <th>Post</th>
+                
             </tr>
         </thead>
         <tbody>
@@ -29,10 +30,9 @@
                         @post.DateAdded
                     </td>
                     <td>
-                        @post.PostingBody
+                        @Html.Raw(post.PostingBody)
                     </td>
                 </tr>
             }
-
         </tbody>
     </table>

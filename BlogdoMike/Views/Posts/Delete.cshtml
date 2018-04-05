@@ -6,3 +6,13 @@
 
 <h2>Delete</h2>
 
+<h3>Você tem certeza que deseja deletar?</h3>
+<hr />
+@using (Html.BeginForm())
+{
+    <div class="form-group">
+        <input type="submit" value="Deletar" class="btn btn-primary" />
+        @Html.ActionLink("Voltar", "Index", "Posts", null, new { @class = "btn btn-default" })
+    </div>
+}
+
