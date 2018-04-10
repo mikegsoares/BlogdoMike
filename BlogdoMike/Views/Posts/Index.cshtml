@@ -1,4 +1,4 @@
-﻿@model IEnumerable<BlogdoMike.Models.Post>
+﻿@model IEnumerable<BlogdoMike.ViewModels.PostViewModel>
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -15,6 +15,7 @@
             <tr>
                 <th>Título</th>
                 <th>Data do Post</th>
+                <th>Imagem</th>
                 <th>Post</th>
                 
             </tr>
@@ -28,6 +29,9 @@
                     </td>
                     <td>
                         @post.DateAdded
+                    </td>
+                    <td>
+                        <img src="~/Posts/RetrieveImage/@post.Id" alt="" height="100" width="200" />
                     </td>
                     <td>
                         @Html.Raw(post.PostingBody)
